@@ -5,7 +5,7 @@ AVRPowerManager is an Arduino Library with the help of which one can shutdown a 
 
 # Usage
 
-1. Get reference to the shared instance from type `AVRPowerManager ` with the constructor `AVRPowerManager::shared()`
+1. Get reference to the shared instance from type `AVRPowerManager ` with `AVRPowerManager::shared()`
 2. Call the `AVRPowerManager::shared()->shutdownIfNeeded(int8_t inputFromShiftRegister)` in the main aplication loop and optionally pass input from the shift register. The library checks for simultaneous presses of "start" + "select" buttons from NES Controller to trigger shutdown or auto shutdowns in after 2 mins.
 3. Drive pin 2 (INT0) **LOW** to wake up the microcontroller.
 4. You can alter the behaviour for expected states and start states by changing the config in `AVRPowerManager.ccp` file.

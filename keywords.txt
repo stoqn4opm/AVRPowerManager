@@ -1,0 +1,4 @@
+AVRPowerManager	KEYWORD1
+wantsShutdown	KEYWORD2
+shutdownIfNeeded	KEYWORD2
+shared	KEYWORD2

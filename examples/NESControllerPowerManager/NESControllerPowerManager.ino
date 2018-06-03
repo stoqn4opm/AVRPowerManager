@@ -11,7 +11,7 @@ HEF4021BP shiftRegister(3, 4, 5); // clock, latch, data
  * for this demo, hook a NES controller on pins 3, 4, 5 and pass the input to the AVRPowerManger
  * Press simultaneously "start" and "select buttons for 2 seconds and after release the system will
  * enter shutdown sleep mode. There is also a 2 min autoshutdown in case of no buttons pressed.
- * 
+ * For waking up, drive pin 2 (INT0) low.
  */
 
 void setup() {
